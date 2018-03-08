@@ -15,23 +15,23 @@ h1{font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
 }
 
-@media (max-width: 500px){
-    h1{
-        font-size: 1.6rem;
-    }
-    h2{
-        font-size: 0.9rem;
-    }
-}
-
 h2{  font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: white;
     text-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
     letter-spacing: .6em;
     text-transform: uppercase;
-    
 }
+
+@media (max-width: 500px){
+    h1{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 0.8rem;
+    }
+}   
+
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
@@ -39,6 +39,11 @@ h3 {
     text-shadow: 0 0 0.1em rgb(0,   0, 0);
     letter-spacing: .1em;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.content{
+    background-color: #111111;
 }
 
 .header-container{
@@ -52,11 +57,42 @@ h3 {
     align-items: center;
     flex-flow: column;
 }
+.work-wrapper{
+    max-width: 860px;
+    margin: auto;
+    padding-bottom: 40px;
+}
 
 .work {
-    background-color: #111111;
-    min-height: 100vw;
-    display: flex;
-    justify-content: center;
-    padding-top: 30px; 
+    padding-top: 30;
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+.work > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.aside{
+    min-height: 250px;
+    margin: 10px;
+    background-image: radial-gradient( 
+      hsl(200,10%,50%) 29%, 
+      hsl(200,10%,60%) 30%,
+      hsl(200,10%,90%) 50%,
+      hsl(200,10%,60%) 70%,
+      hsl(200,10%,90%) 73%
+   );
+}
+  @media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .work    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .work    { order: 2; }
+  .aside-2 { order: 3; }
 }
