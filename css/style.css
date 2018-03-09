@@ -16,7 +16,7 @@ h1{font-family: 'Open Sans', sans-serif;
     text-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
     letter-spacing: .4em;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin: 30px auto 30px auto;
 }
 
 h2{  font-family: 'Open Sans', sans-serif;
@@ -38,18 +38,21 @@ h3 {
     margin-top: 30px;
 }
 h4 {
-    font-size: .8rem;
-    color: rgb(31, 31, 31);
-    font-weight: 600; 
+    font-size: 1.2rem;
+    color: rgb(221, 221, 221);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+
 }
 
 h5{
-    font-size: .4rem;
-    color: rgba(31, 31, 31, .5);
+    font-size: .8rem;
+    color:  rgb(221, 221, 221);
     font-weight: 200; 
 }
 
-@media (max-width: 500px){
+@media (max-width: 700px){
     h1{
         font-size: 1.3rem;
     }
@@ -60,7 +63,30 @@ h5{
         font-size: 1.2rem;
         letter-spacing: .15em;
     }
+    h4{
+        font-size: .8rem;
+    }
+    h5{
+        font-size: .4rem;
+    }
 }   
+
+.profilbild{
+    width: 4rem;
+    clip-path: circle(50% at 50% 50%);
+    transform: scale(.9,.9);
+}
+
+@keyframes profilbild{
+    from {transform: scale(.9,.9);}
+    to {transform: scale(.99,.99);}
+}
+
+.profilbild:hover{
+    animation: profilbild .1s ease-in;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
 
 .content{
     background-color: #111111;
@@ -86,17 +112,31 @@ h5{
    padding: .5em;
 }
 
-img{
+.project > img{
     width: 100%;
 }
 
 .textbox{
     width: calc(100%-0.5em);
-    background-color: rgb(235, 235, 235);
+    background-color: #202020;
     padding: .25em .5em;
     font-weight: 200;
 }
 
+.project:hover{
+    box-shadow:0em 0em 5px 0px gold;
+}
+
 .prozac{
     grid-column: 1/3;
+}
+
+@media (min-width:700px){
+    .work-grid{
+        grid-gap: 1em;
+        padding: 1em;
+     }
+     .profilbild{
+        width: 6rem;
+     }
 }
