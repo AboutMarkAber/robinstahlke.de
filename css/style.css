@@ -4,6 +4,8 @@
 
 html{
     font-size: 100%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +25,17 @@ h2{  font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: 0 0 0.1em rgb(0,   0, 0);
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+
 @media (max-width: 500px){
     h1{
         font-size: 1.3rem;
@@ -30,17 +43,11 @@ h2{  font-family: Arial, Helvetica, sans-serif;
     h2{
         font-size: 0.8rem;
     }
+    h3{
+        font-size: 1.2rem;
+        letter-spacing: .15em;
+    }
 }   
-
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    color: white;
-    text-shadow: 0 0 0.1em rgb(0,   0, 0);
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    text-align: center;
-}
 
 .content{
     background-color: #111111;
@@ -57,42 +64,18 @@ h3 {
     align-items: center;
     flex-flow: column;
 }
-.work-wrapper{
-    max-width: 860px;
-    margin: auto;
-    padding-bottom: 40px;
+.work-grid{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   max-width: 900px;
+   margin: 0 auto 0 auto;
+   padding: .5em;
 }
 
-.work {
-    padding-top: 30;
-    display: flex;  
-    flex-flow: row wrap;
-    font-weight: bold;
-    text-align: center;
-}
-.work > * {
-    padding: 10px;
-    flex: 1 100%;
+img{
+    width: 100%;
 }
 
-.aside{
-    min-height: 250px;
-    margin: 10px;
-    background-image: radial-gradient( 
-      hsl(200,10%,50%) 29%, 
-      hsl(200,10%,60%) 30%,
-      hsl(200,10%,90%) 50%,
-      hsl(200,10%,60%) 70%,
-      hsl(200,10%,90%) 73%
-   );
-}
-  @media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
-}
-
-@media all and (min-width: 800px) {
-  .work    { flex: 3 0px; }
-  .aside-1 { order: 1; } 
-  .work    { order: 2; }
-  .aside-2 { order: 3; }
+.project{
+    margin: .5em;
 }
