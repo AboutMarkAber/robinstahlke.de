@@ -77,7 +77,8 @@ h5{
 }
 .work-grid{
    display: grid;
-   grid-template-columns: 50% 50%;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: .5em;
    max-width: 900px;
    margin: 0 auto 0 auto;
    padding: .5em;
@@ -87,13 +88,13 @@ img{
     width: 100%;
 }
 
-.project{
-    margin: .5em;
-}
-
 .textbox{
     width: calc(100%-0.5em);
     background-color: rgb(235, 235, 235);
     padding: .25em .5em;
-    font-weight: 200; 
+    font-weight: 200;
+}
+
+.prozac{
+    grid-column: 1/3;
 }
