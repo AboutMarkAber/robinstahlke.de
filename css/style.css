@@ -37,8 +37,12 @@ h3 {
 }
 h4 {
     font-size: .8rem;
-    padding: .1em .1em .1em .5em;
     color: rgb(31, 31, 31);
+}
+
+h5{
+    font-size: .4rem;
+    color: rgba(31, 31, 31, .5);
 }
 
 @media (max-width: 500px){
@@ -86,6 +90,7 @@ img{
 }
 
 .textbox{
-    width: 100%;
-    background-color: rgb(255, 255, 255);
+    width: calc(100%-0.5em);
+    background-color: rgb(235, 235, 235);
+    padding: .25em .5em;
 }
