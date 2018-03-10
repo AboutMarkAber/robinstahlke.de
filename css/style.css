@@ -48,7 +48,7 @@ h4 {
 
 h5{
     font-size: .8rem;
-    color:  rgb(221, 221, 221);
+    color:  rgba(221, 221, 221, 0.7);
     font-weight: 200; 
 }
 
@@ -74,18 +74,11 @@ h5{
 .profilbild{
     width: 4rem;
     clip-path: circle(50% at 50% 50%);
-    transform: scale(.9,.9);
-}
-
-@keyframes profilbild{
-    from {transform: scale(.9,.9);}
-    to {transform: scale(.99,.99);}
+    transition: all .2s ease-in-out;
 }
 
 .profilbild:hover{
-    animation: profilbild .1s ease-in;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+    transform: scale(1.1);
 }
 
 .content{
@@ -112,8 +105,19 @@ h5{
    padding: .5em;
 }
 
-.project > img{
+.projectimage{
+    display: inline-block;
     width: 100%;
+    overflow: hidden;
+}
+.project > span >img{
+    width: 100%;
+    transition: all .2s ease-in-out;
+    z-index: 0;
+}
+
+.project > span > img:hover{
+    transform: scale(1.1);
 }
 
 .textbox{
@@ -121,6 +125,11 @@ h5{
     background-color: #202020;
     padding: .25em .5em;
     font-weight: 200;
+    z-index: 2;
+}
+
+.project{
+    overflow: hidden;
 }
 
 .project:hover{
