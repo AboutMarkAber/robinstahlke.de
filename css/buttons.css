@@ -25,8 +25,7 @@
 /* Box colors */
 
 .bg-2 {
-	background: #111111;
-	color: #ECEFF1;
+	color: white;
 }
 
 /* Common button styles */
@@ -56,8 +55,8 @@
 /* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
 
 .bg-2 .button {
-	color: #ECEFF1;
-	border-color: #ECEFF1;
+	color: white;
+	border-color: white;
 }
 
 /* Sizes */

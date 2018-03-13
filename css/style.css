@@ -84,7 +84,14 @@ h5{
 
 a {
 	text-decoration: none;
-	outline: none;
+    outline: none;
+    color: #fff;
+}
+
+a:visited{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
 }
 
 .profilbild{
@@ -165,5 +172,3 @@ a {
 
 
 /*footer*/
-
-@import url("buttons.css")
