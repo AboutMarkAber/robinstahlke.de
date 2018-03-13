@@ -1,75 +1,52 @@
-<html>
-<head>
-	<title>Portfolio Robin Stahlke</title>
-	<meta charset="utf-8">
-	<meta http-equiv="expires" content="0">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-	<meta name="author" content="Robin Stahlke">
-	<meta name="date" content="2017-05-09">
-	<meta name="description" content="Hi my Name ist Robin. I am an art director &amp; designer based in Berlin working on branding, movies, visual identities and web design.">
-	<meta name="keywords" lang="en" content="Portfolio, Design, Shortfilm, Robin, Stahlke, advertising, web design">
-	<meta name="keywords" lang="de" content="Portfolio, Design, Kurzfilm, Robin, Stahlke, Werbung, Webdesign">
-	<meta name="format-detection" content="telephone=yes">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Button Styles Inspiration</title>
+		<meta name="description" content="Some ideas for modern button styles and effects" />
+		<meta name="keywords" content="button, effect, hover, style, inspiration, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+					
 
-	<link rel="stylesheet" href="css/style.css">
+			<section class="content">
+				<h2>Itzel</h2>
+				<svg class="hidden">
+					<defs>
+						<clipPath id="clipBox" clipPathUnits="objectBoundingBox">
+							<polygon points="0,0 0,1 0.35,1 0.35,0.6 0.65,0.6 0.65,1 1,1 1,0" />
+						</clipPath>
+					</defs>
+				</svg>
+				
+				<div class="box bg-2">
+					
+					<button class="button button--itzel button--text-thick button--text-upper button--border-thick button--size-s"><i class="button__icon icon icon-envelope"></i><span>Send Message</span></button>
+					
+				</div>
+				
+			</section>
 
-</head>
-<body>	
-	<section class="content">
-		<div class="header-container">
-				<img class="profilbild" src="img/profil.png">
-				<h1>Robin Stahlke</h1>
-				<h2>Portfolio</h2>
-		</div>
-		<h3>Arbeiten</h3>
-		<div class="work-grid">	
-			<div class="project elements-crystal">
-				<span class="projectimage">
-					<img src="img/elements-crystal.jpg">
-				</span>
-				<div class="textbox">
-					<h5>Video</h5>
-					<h4>Elements Crystal</h4>
-				</div>
-			</div>
-			<div class="project elements-ice">
-				<span class="projectimage">
-					<img src="img/elements-ice.jpg">
-				</span>
-				<div class="textbox">
-					<h5>Video</h5>
-					<h4>Elements Ice</h4>
-				</div>
-			</div>
-			<div class="project elements-fire">
-				<span class="projectimage">
-					<img src="img/elements-fire.jpg">
-				</span>
-				<div class="textbox">
-					<h5>Video</h5>
-					<h4>Elements Fire</h4>
-				</div>
-			</div>
-			<div class="project ballerroom">
-				<span class="projectimage">
-					<img src="img/ballerroom.jpg">
-				</span>
-				<div class="textbox">
-					<h5>Video</h5>
-					<h4>Love Is Everywhere</h4>
-				</div>
-			</div>
-			<div class="project prozac">
-				<span class="projectimage">	
-					<img src="img/prozac-winter.jpg">
-				</span>
-					<div class="textbox">
-						<h5>Video Loop</h5>
-						<h4>Prozac</h4>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-</body>
+		</div><!-- /container -->
+		<script>
+			(function() {
+				var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+				if(isSafari) {
+					document.getElementById('support-note').style.display = 'block';
+				}
+			})();
+		</script>
+	</body>
 </html>
