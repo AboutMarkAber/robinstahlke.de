@@ -21,7 +21,7 @@ body{
     background-color: #111111;
 }
 
-h1{font-family: 'Railway', sans-serif;
+h1{ font-family: 'Railway', sans-serif;
     font-size: 2rem;
     color: white;
     text-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
@@ -61,6 +61,11 @@ h5{
     font-size: .8rem;
     color:  rgba(221, 221, 221, 0.7);
     font-weight: 200; 
+}
+
+p{
+    font-family: 'Railway', sans-serif;
+    font-size: 1rem;
 }
 
 @media (max-width: 700px){

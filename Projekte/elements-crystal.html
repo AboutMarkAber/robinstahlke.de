@@ -17,11 +17,46 @@
     <link rel="stylesheet" type="text/css" href="../css/vicons-font.css" />
     <link rel="stylesheet" type="text/css" href="../css/buttons.css" />
 
+
+    <style type="text/css">
+        .classname {
+          animation: goback .3s ease-in-out infinite;
+        }
+        @keyframes goback {
+          from {
+            transform: translate(0,0);
+          }
+          to {
+            transform: translate(-7px,0);
+          }
+        }
+        </style>
+        
+        <title>Untitled Document</title>
+
 </head>
 <body>
+
+    <section>
+        <nav>
+            <a class="logo" href="../index.html"><h1>Robin Stahlke</h1></a>
+            <a href="../index.html">
+                <div class="back-wrapper">
+                    <div class="back-container">
+                        <span>
+                            <img class="back-icon" src="../img/svg/back.svg" />
+                        </span>
+                        <span>
+                            <p id="backfont" onmouseover="ani()">zurück</p>
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </section>
     <section class="content">
-        <h1><a href="../index.html">Robin Stahlke</a></h1>
-        <h2>Elements Crystal</h2>
+        <h1>Elements</h1>
+        <h2>Crystal</h2>
         <div class="work-grid">
             <div class="project prozac">
                 <span class="projectimage">	
@@ -32,6 +67,60 @@
                     <div class="textbox-crystal">
                         <h5>Video Loop</h5>
                         <h4>Prozac</h4>
+                </div>
+            </div>
+            <div class="project elements-crystal">
+                <span class="projectimage">
+                    <img src="../img/screen-elements-crystal.jpg">
+                </span>
+                <div class="textbox-crystal">
+                    <h5>Screenshot</h5>
+                    <h4>Adobe Premiere</h4>
+                </div>
+            </div>
+            <div class="project elements-crystal">
+                <span class="projectimage">
+                    <img src="../img/elements-crystal-makingof1.jpg">
+                </span>
+                <div class="textbox-crystal">
+                    <h5>Elements Crystal</h5>
+                    <h4>Work In Progress</h4>
+                </div>
+            </div>
+            <div class="project elements-crystal">
+                <span class="projectimage">
+                    <img src="../img/elements-crystal-makingof2.jpg">
+                </span>
+                <div class="textbox-crystal">
+                        <h5>Elements Crystal</h5>
+                        <h4>Work In Progress</h4>
+                </div>
+            </div>
+            <div class="project elements-crystal">
+                <span class="projectimage">
+                    <img src="../img/elements-crystal-makingof3.jpg">
+                </span>
+                <div class="textbox-crystal">
+                        <h5>Elements Crystal</h5>
+                        <h4>Work In Progress</h4>
+                </div>
+            </div>
+            <div class="project elements-crystal">
+                <span class="projectimage">
+                    <img src="../img/elements-crystal-makingof4.jpg">
+                </span>
+                <div class="textbox-crystal">
+                        <h5>Elements Crystal</h5>
+                        <h4>Work In Progress</h4>
+                </div>
+            </div>
+            <div class="project elements-crystal">
+                <span class="projectimage">
+                    <img src="../img/elements-crystal-makingof5.jpg">
+                </span>
+                <div class="textbox-crystal">
+                        <h5>Elements Crystal</h5>
+                        <h4>Work In Progress</h4>
                 </div>
             </div>
         </div>
@@ -53,7 +142,7 @@
                     </svg>
                     
                     <div class="box bg-2">
-                        <a href="mailto:robinstahlke@gmail.com">
+                        <a href="mailto:kontakt@robinstahlke.de">
                             <button class="button button--itzel button--text-thick button--text-upper button--border-thick button--size-s"><i class="button__icon icon icon-envelope"></i><span><p>Kontakt</p></span></button>
                         </a>
                     </div>
@@ -61,6 +150,23 @@
                 </section>
 				</div>
 		</footer>
-	</section>
+    </section>
+
+
+    <script type="text/javascript">
+        var banner = document.querySelector('#backfont');
+
+        banner.onmouseover = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('#back-icon').style.animationPlayState = 'running';
+        }
+        
+        banner.onmouseout = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('#back-icon').style.animationPlayState = 'paused';
+        }
+        
+      </script>
+
 </body>
 </html>
