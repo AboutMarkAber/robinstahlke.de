@@ -47,7 +47,7 @@
                             <img class="back-icon" src="../img/svg/back.svg" />
                         </span>
                         <span>
-                            <p id="backfont" onmouseover="ani()">zurück</p>
+                            <p class="backfont" onmouseover="ani()">zurück</p>
                         </span>
                     </div>
                 </div>
@@ -154,16 +154,16 @@
 
 
     <script type="text/javascript">
-        var banner = document.querySelector('#backfont');
+        var banner = document.querySelector('.backfont');
 
         banner.onmouseover = 
         banner.ontouchstart = function (evt) {
-            document.querySelector('#back-icon').style.animationPlayState = 'running';
+            document.querySelector('.back-icon').style.animationPlayState = 'running';
         }
         
         banner.onmouseout = 
         banner.ontouchstart = function (evt) {
-            document.querySelector('#back-icon').style.animationPlayState = 'paused';
+            document.querySelector('.back-icon').style.animationPlayState = 'paused';
         }
         
       </script>

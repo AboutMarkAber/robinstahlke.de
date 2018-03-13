@@ -32,9 +32,8 @@ body{
     to{transform: translate(-7px,0) scale(1)}
 }
 
-#backfont{
+.backfont{
     display: inline-block;
-    vertical-align: middle;
     transform: translate(0,-13px);
 }
 
@@ -54,11 +53,13 @@ body{
 }
 
 @media (max-width:400px){
-    #backfont{
+    .backfont{
         visibility: hidden;
     }
     .back-icon{
-        transform: translate(0,0) scale(0.8);
+        transform: translate(5px,0) scale(0.8);
+        left: 10%;
+        animation: unset;
     }
 }
 
