@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600);
+
 body{
     background-color: #fc8ec1;
 }
@@ -67,10 +69,6 @@ h2{
     }
 }
 
-.content{
-    background-color: #fc8ec1;
-}
-
 .content h1,h2{
     text-align: center;
     color: #fff;
@@ -87,13 +85,13 @@ h2{
 
 .textbox-crystal{
     width: calc(100%-0.5em);
-    background-color: white;
+    background-color: #ff6fb2;
     padding: .25em .5em;
     font-weight: 200;
 }
 
 .textbox-crystal h5,h4{
-    color: #ff6fb2;
+    color: white;
 }
 .responsive-video iframe {
     position: absolute;

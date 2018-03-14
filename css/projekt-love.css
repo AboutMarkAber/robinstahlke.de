@@ -1,19 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600);
 
 body{
-    background-color: #d02e26
-}
-
-.header-container-dow-nl{
-    background-image: url(../img/designer-outlets-wolfsburg-newsletter.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100vw;
-    max-height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    background-color: #911645;
 }
 
 .logo{
@@ -26,22 +14,17 @@ body{
     left: 10%;
     margin: auto;
     max-width: 900px;
-    top: 30px;
 }
 
-h1,p{
-    color: #a22927;
-    text-shadow: unset;
+h1{
+    color: #7a123a;
+    text-shadow: none;
 }
 
 h2{
     text-shadow: unset;
 }
 
-h4,h5{
-    text-align: center;
-    margin: .5em;
-}
 .back-icon{
     display: inline-block;
     width: 20px;
@@ -84,4 +67,44 @@ h4,h5{
         left: 10%;
         animation: unset;
     }
+}
+
+.content h1,h2{
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    margin: 30px 0 10px 0;
+}
+
+.content h2{
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+.textbox-love{
+    width: calc(100%-0.5em);
+    background-color: #7a123a;
+    padding: .25em .5em;
+    font-weight: 200;
+}
+
+.textbox-love h5,h4{
+    color: #fff;
+}
+.responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%; /* Default for 1600x900 videos 16:9 ratio*/
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
 }
