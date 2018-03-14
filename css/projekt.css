@@ -14,9 +14,13 @@ body{
     max-width: 900px;
 }
 
-.logo h1{
+h1{
     color: #ff6fb2;
-    text-shadow: none;
+    text-shadow: unset;
+}
+
+h2{
+    text-shadow: unset;
 }
 
 .back-icon{
