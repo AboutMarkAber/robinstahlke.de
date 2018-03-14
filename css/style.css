@@ -177,4 +177,18 @@ a:visited{
     color: rgb(141, 141, 141)
 }
 
-/*footer*/
+/*video*/
+
+#videosList {
+    max-width: 600px; 
+     overflow: hidden;
+   }
+   
+   .video {
+     background-image: url('');
+     height: 330px;
+     width: 600px;
+   }
+   
+   /* Hide Play button + controls on iOS */
+ 
