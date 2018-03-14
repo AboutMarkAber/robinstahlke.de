@@ -112,10 +112,6 @@ a:visited{
     transform: scale(1);
 }
 
-.content{
-    background-color: #111111;
-}
-
 .header-container{
     background-image: url(../img/moonlight.jpg);
     background-position: bottom center;

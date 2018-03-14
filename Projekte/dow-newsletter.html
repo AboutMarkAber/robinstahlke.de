@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Portfolio Robin Stahlke</title>
+	<meta charset="utf-8">
+	<meta http-equiv="expires" content="0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta name="author" content="Robin Stahlke">
+	<meta name="date" content="2017-05-09">
+	<meta name="description" content="Hi my Name ist Robin. I am an art director &amp; designer based in Berlin working on branding, movies, visual identities and web design.">
+	<meta name="keywords" lang="en" content="Portfolio, Design, Shortfilm, Robin, Stahlke, advertising, web design">
+	<meta name="keywords" lang="de" content="Portfolio, Design, Kurzfilm, Robin, Stahlke, Werbung, Webdesign">
+	<meta name="format-detection" content="telephone=yes">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projekt-dow-nl.css" />
+	<link rel="stylesheet" type="text/css" href="../css/vicons-font.css" />
+	<link rel="stylesheet" type="text/css" href="../css/buttons.css" />
+
+</head>
+<body>
+    <section>
+        <nav>
+            <a class="logo" href="../index.html"><h1>Robin Stahlke</h1></a>
+            <a href="../index.html">
+                <div class="back-wrapper">
+                    <div class="back-container">
+                        <span>
+                            <img class="back-icon" src="../img/svg/back.svg" />
+                        </span>
+                        <span>
+                            <p class="backfont" onmouseover="ani()">zurück</p>
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </section>
+	<section class="content">
+		<div class="header-container-dow-nl">
+		</div>
+		<h3>Arbeiten</h3>
+		<div class="work-grid">
+			
+		</div>
+
+	</section>
+	<section>
+		<footer>
+				<div class="container">
+					
+					<section class="content">
+						
+						<svg class="hidden">
+							<defs>
+								<clipPath id="clipBox" clipPathUnits="objectBoundingBox">
+									<polygon points="0,0 0,1 0.35,1 0.35,0.6 0.65,0.6 0.65,1 1,1 1,0" />
+								</clipPath>
+							</defs>
+						</svg>
+						
+						<div class="box bg-2">
+							<a href="mailto:kontakt@robinstahlke.de">
+								<button class="button button--itzel button--text-thick button--text-upper button--border-thick button--size-s"><i class="button__icon icon icon-envelope"></i><span><p>Kontakt</p></span></button>
+							</a>
+						</div>
+						
+					</section>
+				</div>
+		</footer>
+    </section>
+    <script type="text/javascript">
+        var banner = document.querySelector('.backfont');
+
+        banner.onmouseover = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.back-icon').style.animationPlayState = 'running';
+        }
+        
+        banner.onmouseout = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.back-icon').style.animationPlayState = 'paused';
+        }
+        
+    </script>
+</body>
+</html>
