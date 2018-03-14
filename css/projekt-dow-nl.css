@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600);
 
 body{
-    background-color: #d02e26
+    background-color: #d02e26;
 }
 
 .header-container-dow-nl{
@@ -38,8 +38,13 @@ h2{
     text-shadow: unset;
 }
 
+h3{
+    text-shadow: unset;
+}
+
 h4,h5{
     text-align: center;
+    font-size: 1rem;
     margin: .5em;
 }
 .back-icon{
@@ -85,3 +90,4 @@ h4,h5{
         animation: unset;
     }
 }
+
