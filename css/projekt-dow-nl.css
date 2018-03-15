@@ -16,11 +16,6 @@ body{
     flex-flow: column;
 }
 
-.logo{
-    position: fixed;
-    visibility: hidden;
-}
-
 .back-wrapper{
     top: 0px;
     width: 100%;
@@ -65,15 +60,6 @@ h4,h5{
 .backfont{
     display: inline-block;
     transform: translate(0,-13px);
-}
-
-@media (min-width: 1040px){
-    .logo{
-        position: fixed;
-        transform: rotate(-90deg) translate(0,-175px);
-        top: 25%;
-        visibility: unset;
-    }    
 }
 
 @media (max-width:400px){
