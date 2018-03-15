@@ -104,7 +104,7 @@ a:visited{
     padding: 10px 0 6px 10%;
     background-color: #111111;
     z-index: 20;
-    transition: 0.35s all ease-out;
+    transition: 0.20s all ease-out;
 }
 
 .profilbild{
