@@ -96,10 +96,6 @@ a:visited{
     transform: scale(1);
 }
 
-.content{
-    padding: 0 0.4em 0 0.4em;
-}
-
 .header-container{
     background-image: url(../img/moonlight.jpg);
     background-position: bottom center;
