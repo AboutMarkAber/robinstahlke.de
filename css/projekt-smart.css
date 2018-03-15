@@ -16,8 +16,13 @@ body{
     flex-flow: column;
 }
 
-h1,p{
+p{
     color: white;
+    text-shadow: unset;
+}
+
+h1{
+    color:teal;
     text-shadow: unset;
 }
 
@@ -150,4 +155,13 @@ p{
     .threecolumns{
         column-count: 1;
     }
+}
+
+.kreuzung-vid>h4{
+    text-align: unset;
+    margin: unset;
+}
+.kreuzung-vid>h5{
+    text-align: unset;
+    margin: unset;
 }
