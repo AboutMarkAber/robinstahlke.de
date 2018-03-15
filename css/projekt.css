@@ -60,11 +60,8 @@ h2{
     margin: 0;
 }
 
-.textbox-crystal{
-    width: calc(100%-0.5em);
+.project-text{ 
     background-color: #ff6fb2;
-    padding: .25em .5em;
-    font-weight: 200;
 }
 
 .textbox-crystal h5,h4{

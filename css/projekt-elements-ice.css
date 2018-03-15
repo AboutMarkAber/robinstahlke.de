@@ -61,8 +61,7 @@ h2{
     margin: 0;
 }
 
-.textbox-ice{
-    width: calc(100%-0.5em);
+.project-text{
     background-color: #0c374b;
     padding: .25em .5em;
     font-weight: 200;
@@ -91,4 +90,9 @@ h2{
 
 .kontakt{
     color: #0c374b;
+}
+
+@media (max-width:920px){
+    .project-text{
+        margin-bottom: 1em}
 }

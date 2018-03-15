@@ -60,11 +60,8 @@ h2{
     margin: 0;
 }
 
-.textbox-love{
-    width: calc(100%-0.5em);
+.project-text{
     background-color: #7a123a;
-    padding: .25em .5em;
-    font-weight: 200;
 }
 
 .textbox-love h5,h4{
