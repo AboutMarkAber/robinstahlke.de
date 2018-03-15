@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600);
+
+body{
+    background-color: #0e9b9b;
+}
+
+.header-container{
+    background-image: url(../img/smart-mobility/02CarryBay.png);
+    background-position: center center;
+    background-size: cover;
+    height: 100vw;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.logo{
+    position: fixed;
+    visibility: hidden;
+}
+
+.back-wrapper{
+    position: absolute;
+    left: 10%;
+    margin: auto;
+    max-width: 900px;
+    top: 30px;
+}
+
+h1,p{
+    color: #white;
+    text-shadow: unset;
+}
+
+h2{
+    text-shadow: unset;
+}
+
+h3{
+    text-shadow: unset;
+}
+
+h4,h5{
+    text-align: center;
+    font-size: 1rem;
+    margin: .5em;
+}
+.back-icon{
+    display: inline-block;
+    width: 20px;
+    transform: translate(0,0) scale(1);
+    animation: backani .6s ease-in-out infinite paused;
+    animation-direction: alternate;
+}
+
+@keyframes backani{
+    from{transform: translate(0,0) scale(1)}
+    to{transform: translate(-7px,0) scale(1)}
+}
+
+.backfont{
+    display: inline-block;
+    transform: translate(0,-13px);
+    color: white;
+}
+
+@media (min-width: 1040px){
+    .logo{
+        position: fixed;
+        transform: rotate(-90deg) translate(0,-175px);
+        top: 25%;
+        visibility: unset;
+    }    
+}
+
+@media (max-width:500px){
+    .back-wrapper{
+        left: 3%;
+    }
+}
+
+@media (max-width:400px){
+    .backfont{
+        visibility: hidden;
+    }
+    .back-icon{
+        transform: translate(5px,0) scale(0.8);
+        left: 10%;
+        animation: unset;
+    }
+}
+
+/*Content*/
+
+.work-grid-smart{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-row-gap: .5em;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    padding: .5em;
+ }
+
+ .project > span > img:hover{
+    transform: unset;
+}
+
+.project-text{
+    background-color: teal;
+    padding: 1em;
+}
+
+.onerow{
+    font-weight: 300;
+    grid-column: 1/3;
+    line-height: 1.35;
+}
+
+.threecolumns{
+    column-count: 3;
+}
+
+.loesung{
+    margin: 1em 0 0 0;
+    font-size: 1.3rem;
+}
+
+.firstsubline{
+  margin-bottom: 0;
+}
+
+.onerowfirst{
+    padding: 0.5em 0.5em 0 0.5em;  
+}
+
+.kursiv{
+    font-style: italic;
+}
