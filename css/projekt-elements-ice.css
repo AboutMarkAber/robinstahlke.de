@@ -89,10 +89,5 @@ h2{
 
 
 .kontakt{
-    color: #0c374b;
-}
-
-@media (max-width:920px){
-    .project-text{
-        margin-bottom: 1em}
+    color: white;
 }

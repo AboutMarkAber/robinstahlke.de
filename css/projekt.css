@@ -13,6 +13,14 @@ h2{
     text-shadow: unset;
 }
 
+h4{
+    color: white;
+}
+
+h5{
+    color: white;
+}
+
 .back-icon{
     display: inline-block;
     width: 20px;
@@ -64,9 +72,6 @@ h2{
     background-color: #ff6fb2;
 }
 
-.textbox-crystal h5,h4{
-    color: white;
-}
 .responsive-video iframe {
     position: absolute;
     top: 0;
