@@ -4,16 +4,6 @@ body{
     background-color: #104761;
 }
 
-.back-wrapper{
-    top: 0px;
-    width: 100%;
-    position: fixed;
-    padding: 20px 0 12px 10%;
-    background-color: #111111;
-    z-index: 2;
-}
-
-
 h1{
     color: #0c374b;
     text-shadow: none;

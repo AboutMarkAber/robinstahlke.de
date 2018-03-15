@@ -35,14 +35,6 @@ h4,h5{
     margin: .5em;
 }
 
-.back-wrapper{
-    top:0px;
-    width: 100%;
-    position: fixed;
-    padding: 20px 0 12px 10%;
-    background-color: #111111;
-    z-index: 2;
-}
 
 .back-icon{
     display: inline-block;

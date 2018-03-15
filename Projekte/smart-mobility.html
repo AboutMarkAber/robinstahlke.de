@@ -23,7 +23,7 @@
         <nav>
             <a class="logo" href="../index.html"><h1>Robin Stahlke</h1></a>
             
-			<div class="back-wrapper">
+			<div class="back-wrapper scrolled">
 				<a href="../index.html">
 					<div class="back-container">
 						<span>
@@ -363,6 +363,8 @@
 				</div>
 		</footer>
     </section>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
     <script type="text/javascript">
         var banner = document.querySelector('.backfont');
 
@@ -376,6 +378,19 @@
             document.querySelector('.back-icon').style.animationPlayState = 'paused';
         }
         
+    </script>
+    <script>
+        $(function(){
+            $(window).scroll(function() {
+                if($(window).scrollTop() >= 1) {
+                    $('.back-wrapper').removeClass('scrolled');          
+                }
+                else{
+                    
+                    $('.back-wrapper').addClass('scrolled'); 
+                }
+            });
+        });
     </script>
 </body>
 </html>

@@ -97,6 +97,16 @@ a:visited{
     color: #fff;
 }
 
+.back-wrapper{
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    padding: 10px 0 6px 10%;
+    background-color: #111111;
+    z-index: 20;
+    transition: 0.35s all ease-out;
+}
+
 .profilbild{
     width: 4rem;
     clip-path: circle(50% at 50% 50%);
@@ -213,4 +223,8 @@ a:visited{
         top: 40%;
         visibility: unset;
     }    
+}
+
+.scrolled{
+    padding: 20px 0 12px 10%;
 }

@@ -16,16 +16,6 @@ body{
     flex-flow: column;
 }
 
-.back-wrapper{
-    top: 0px;
-    width: 100%;
-    position: fixed;
-    padding: 20px 0 12px 10%;
-    background-color: #111111;
-    z-index: 2;
-}
-
-
 h1,p{
     color: #a22927;
     text-shadow: unset;
