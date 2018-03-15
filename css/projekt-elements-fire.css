@@ -10,11 +10,14 @@ body{
 }
 
 .back-wrapper{
-    position: absolute;
-    left: 10%;
-    margin: auto;
-    max-width: 900px;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    padding: 20px 0 12px 10%;
+    background-color: #111111;
+    z-index: 2;
 }
+
 
 h1{
     color: #811f1f;
@@ -52,12 +55,6 @@ h2{
     }    
 }
 
-@media (max-width:500px){
-    .back-wrapper{
-        left: 3%;
-    }
-}
-
 @media (max-width:400px){
     .backfont{
         visibility: hidden;
@@ -67,6 +64,12 @@ h2{
         left: 10%;
         animation: unset;
     }
+}
+
+/*Content*/
+
+.content{
+    margin-top: 100px;
 }
 
 .content h1,h2{

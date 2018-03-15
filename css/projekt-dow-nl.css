@@ -22,12 +22,14 @@ body{
 }
 
 .back-wrapper{
-    position: absolute;
-    left: 10%;
-    margin: auto;
-    max-width: 900px;
-    top: 30px;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    padding: 20px 0 12px 10%;
+    background-color: #111111;
+    z-index: 2;
 }
+
 
 h1,p{
     color: #a22927;
@@ -72,12 +74,6 @@ h4,h5{
         top: 25%;
         visibility: unset;
     }    
-}
-
-@media (max-width:500px){
-    .back-wrapper{
-        left: 3%;
-    }
 }
 
 @media (max-width:400px){
