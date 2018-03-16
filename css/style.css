@@ -113,6 +113,18 @@ a:visited{
     align-items: center;
     flex-flow: column;
 }
+
+.content{
+    margin: auto;
+}
+
+.introtext{
+    display: block;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
 .work-grid{
    display: grid;
    grid-template-columns: 1fr 1fr;
