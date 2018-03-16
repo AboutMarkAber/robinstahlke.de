@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Portfolio Robin Stahlke</title>
+	<meta charset="utf-8">
+	<meta http-equiv="expires" content="0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta name="author" content="Robin Stahlke">
+	<meta name="date" content="2017-05-09">
+	<meta name="description" content="Hi my Name ist Robin. I am an art director &amp; designer based in Berlin working on branding, movies, visual identities and web design.">
+	<meta name="keywords" lang="en" content="Portfolio, Design, Shortfilm, Robin, Stahlke, advertising, web design">
+	<meta name="keywords" lang="de" content="Portfolio, Design, Kurzfilm, Robin, Stahlke, Werbung, Webdesign">
+	<meta name="format-detection" content="telephone=yes">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/impressum.css">
+	<link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
+	<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+
+</head>
+<body>	
+	<section>
+		<nav>
+			<a class="logo" href="index.html"><h1>Robin Stahlke</h1></a>
+			
+			<div class="back-wrapper scrolled">
+				<a href="index.html">
+					<div class="back-container">
+						<span>
+							<img class="back-icon" src="img/svg/back.svg" />
+						</span>
+						<span>
+							<p class="backfont" onmouseover="ani()">zurück</p>
+						</span>
+					</div>
+				</a>	
+			</div>
+			
+		</nav>
+	</section>
+	<section class="content">
+		<h1>Robin Stahlke</h1>
+		<h2>Amsterdamer Str. 20</h2>
+		<h2>13347 Berlin</h2>
+		<h2>Germany</h2>
+		<a href="mailto:hello@robinstahlke.de"><h3>hello@robinstahlke.de</h3></a>
+	</section>
+
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	<script type="text/javascript">
+		var banner = document.querySelector('.backfont');
+
+		banner.onmouseover = 
+		banner.ontouchstart = function (evt) {
+			document.querySelector('.back-icon').style.animationPlayState = 'running';
+		}
+		
+		banner.onmouseout = 
+		banner.ontouchstart = function (evt) {
+			document.querySelector('.back-icon').style.animationPlayState = 'paused';
+		}
+		
+	</script>
+	<script>
+		$(function(){
+			$(window).scroll(function() {
+				if($(window).scrollTop() >= 1) {
+					$('.back-wrapper').removeClass('scrolled');          
+				}
+				else{
+					
+					$('.back-wrapper').addClass('scrolled'); 
+				}
+			});
+		});
+	</script>
+</body>
+</html>
