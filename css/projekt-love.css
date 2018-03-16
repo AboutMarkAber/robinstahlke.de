@@ -67,3 +67,18 @@ h2{
 .textbox-love h5,h4{
     color: #fff;
 }
+
+.project > span >img{
+    width: 100%;
+    transition: unset;
+    z-index: 0;
+}
+
+.project > span > img:hover{
+    transform: unset;
+}
+
+.love-thumb{
+    background-image: url(https://i.vimeocdn.com/video/688320750.jpg);
+    background-size: 100%;
+}

@@ -1,11 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600);
 
 body{
-    background-color: #104761;
+    background-color: #e7e7e7;
 }
 
 h1{
-    color: #0c374b;
+    color: #791108;
     text-shadow: none;
 }
 
@@ -49,7 +49,7 @@ h2{
 
 .content h1,h2{
     text-align: center;
-    color: #fff;
+    color: #791108;
 }
 
 .content h1{
@@ -62,7 +62,7 @@ h2{
 }
 
 .project-text{
-    background-color: #0c374b;
+    background-color: #791108;
     padding: .25em .5em;
     font-weight: 200;
 }
@@ -85,11 +85,37 @@ h2{
     padding-top: 0px;
     height: 0;
     overflow: hidden;
-    background-image: url(https://i.vimeocdn.com/video/688282364.jpg);
+}
+
+.square{
+    padding-bottom: 100%;
+    background-image: url(https://i.vimeocdn.com/video/689220564.jpg);
     background-size: 100%;
 }
 
+.sonderformat{
+    padding-bottom: 67.5%;
+}
 
 .kontakt{
-    color: white;
+    color: #791108;
+}
+
+.project > span >img{
+    width: 100%;
+    transition: unset;
+    z-index: 0;
+}
+
+.project > span > img:hover{
+    transform: unset;
+}
+
+.dow-thumb{
+    background-image: url(https://i.vimeocdn.com/video/689210997.jpg);
+    background-size: 100%;
+}
+
+i{
+    color: #791108
 }

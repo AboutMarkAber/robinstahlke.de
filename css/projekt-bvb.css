@@ -1,11 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600);
 
 body{
-    background-color: #104761;
+    background-color: #e5eff7;
 }
 
 h1{
-    color: #0c374b;
+    color: #0066b3;
     text-shadow: none;
 }
 
@@ -49,7 +49,7 @@ h2{
 
 .content h1,h2{
     text-align: center;
-    color: #fff;
+    color: #0066b3;
 }
 
 .content h1{
@@ -62,7 +62,7 @@ h2{
 }
 
 .project-text{
-    background-color: #0c374b;
+    background-color: #0066b3;
     padding: .25em .5em;
     font-weight: 200;
 }
@@ -85,11 +85,32 @@ h2{
     padding-top: 0px;
     height: 0;
     overflow: hidden;
-    background-image: url(https://i.vimeocdn.com/video/688282364.jpg);
+}
+
+.kontakt{
+    color: #0066b3;
+}
+
+i{
+    color: #0066b3;  
+}
+
+.project > span >img{
+    width: 100%;
+    transition: unset;
+    z-index: 0;
+}
+
+.project > span > img:hover{
+    transform: unset;
+}
+
+.solebtberlin{
+    background-image: url(https://i.vimeocdn.com/video/689179001.jpg);
     background-size: 100%;
 }
 
-
-.kontakt{
-    color: white;
+.mitwissen{
+    background-image: url(https://img.youtube.com/vi/N1Z-LBgUzYs/maxresdefault.jpg);
+    background-size: 100%;
 }
