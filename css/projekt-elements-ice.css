@@ -89,7 +89,9 @@ h2{
     background-size: 100%;
 }
 
-
+.project > span > img:hover{
+    transform: unset;
+}
 .kontakt{
     color: white;
 }

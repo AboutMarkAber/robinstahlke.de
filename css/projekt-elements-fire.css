@@ -86,3 +86,7 @@ h2{
     background-image: url(https://i.vimeocdn.com/video/688316649.jpg);
     background-size: 100%;
 }
+
+.project > span > img:hover{
+    transform: unset;
+}

@@ -75,3 +75,7 @@ h4,h5{
 .project-text{
     background-color:#a32721;
 }
+
+.project > span > img:hover{
+    transform: unset;
+}
