@@ -32,9 +32,6 @@ h2{
 }
 
 @media (max-width:400px){
-    .backfont{
-        visibility: hidden;
-    }
     .back-icon{
         transform: translate(5px,0) scale(0.8);
         left: 10%;
