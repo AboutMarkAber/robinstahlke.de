@@ -125,24 +125,7 @@ a:visited{
     transform: translate(0,-13px);
 }
 
-@media (max-width:400px){
-    .backfont{
-        margin: 0.3em;
-    }
-    .forwardfont{
-        margin: 0.2em;
-    }
-    .back-icon{
-        transform: translate(5px,0) scale(0.8);
-        left: 10%;
-        animation: unset;
-    }
-    .forward-icon{
-        transform: translate(5px,0) scale(-0.8);
-        right: 10%;
-        animation: unset;
-    }
-}
+
 .back-wrapper{
     top: 0px;
     width: 100%;
@@ -289,11 +272,11 @@ a:visited{
 
 .zurueck{
     float: left;
-    margin-left: 10%;
+    margin-left: 7%;
 }
 .weiter{
     float: right;
-    margin-right: 10%;
+    margin-right: 7%;
 }
 
 .responsive-video iframe {
@@ -345,4 +328,24 @@ a:visited{
 
 .impressum{
     display: inline-block;
+}
+
+@media (max-width:400px){
+    .backfont{
+        margin: 0.3em;
+    }
+    
+    .back-icon{
+        transform: translate(5px,0) scale(0.8);
+        left: 10%;
+        animation: unset;
+    }
+    .forward-icon{
+        transform: translate(5px,0) scale(-0.8);
+        right: 10%;
+        animation: unset;
+    }
+    .weiter{
+        margin-right: 7%;
+    }
 }
