@@ -24,7 +24,7 @@
                 <a class="logo" href="../index.html"><h1>Robin Stahlke</h1></a>
                 
                 <div class="back-wrapper scrolled">
-                    <a href="../index.html">
+                    <a class="zurueck" href="../index.html">
                         <div class="back-container">
                             <span>
                                 <img class="back-icon" src="../img/svg/back.svg" />
@@ -33,7 +33,17 @@
                                 <p class="backfont" onmouseover="ani()">zurück</p>
                             </span>
                         </div>
-                    </a>	
+                    </a>
+                    <a class="weiter" href="../index.html">
+                        <div class="forward-container">
+                            <span>
+                                <p class="forwardfont" onmouseover="ani()">weiter</p>
+                            </span>
+                            <span>
+                                <img class="forward-icon" src="../img/svg/back.svg" />
+                            </span>
+                        </div>
+                    </a>		
                 </div>
                 
             </nav>
@@ -53,6 +63,13 @@
                         <h4>Animation</h4>
                 </div>
             </div>
+        </div>
+        <div class="work-grid">
+            <div class="project prozac">
+                <span class="introtext">
+                    <p>Das zweite Promo-Video für die </p><p class="kursiv">Elements</p> <p> hatte das Thema Ice. Ausgehend von Fotos, die in einer Eiswürfelmaschine von <a href="https://www.facebook.com/dennis.btnr">Dennis Büttner</a> gemacht wurden, habe ich ein Video mit </p><p class="kursiv">Adobe After Effects</p><p> erstellt, das sich als Titelsequenz darstellen lässt.
+                </span>
+            </div>              
             <div class="project">
                 <span class="projectimage">
                     <img src="../img/screen-elements-ice.jpg">
@@ -152,7 +169,17 @@
         banner.ontouchstart = function (evt) {
             document.querySelector('.back-icon').style.animationPlayState = 'paused';
         }
+        var banner = document.querySelector('.forwardfont');
+
+        banner.onmouseover = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.forward-icon').style.animationPlayState = 'running';
+        }
         
+        banner.onmouseout = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.forward-icon').style.animationPlayState = 'paused';
+        }
     </script>
     <script>
         $(function(){

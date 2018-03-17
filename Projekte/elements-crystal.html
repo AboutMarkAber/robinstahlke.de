@@ -25,7 +25,7 @@
                 <a class="logo" href="../index.html"><h1>Robin Stahlke</h1></a>
                 
                 <div class="back-wrapper scrolled">
-                    <a href="../index.html">
+                    <a class="zurueck" href="../index.html">
                         <div class="back-container">
                             <span>
                                 <img class="back-icon" src="../img/svg/back.svg" />
@@ -34,7 +34,17 @@
                                 <p class="backfont" onmouseover="ani()">zurück</p>
                             </span>
                         </div>
-                    </a>	
+                    </a>
+                    <a class="weiter" href="../index.html">
+                        <div class="forward-container">
+                            <span>
+                                <p class="forwardfont" onmouseover="ani()">weiter</p>
+                            </span>
+                            <span>
+                                <img class="forward-icon" src="../img/svg/back.svg" />
+                            </span>
+                        </div>
+                    </a>		
                 </div>
                 
             </nav>
@@ -54,6 +64,15 @@
                         <h4>Produktion</h4>
                 </div>
             </div>
+        </div>
+        <div class="work-grid">
+                <div class="project prozac">
+                    <span class="introtext">
+                         <p>Für die Produktion der Titelsequenz der dritten </p><p class="kursiv">Elements</p> <p>Party habe ich mir Steine, die von Sprengungen aus dem Erzgebirge stammen, ausgeliehen. Diese wurden mit verschieden Lichtern ausgeleuchtet und mit einer Kamera mit Makroobjektiv gefilmt. Nachbearbeitet habe ich das Footage in </p><p class="kursiv">Adobe After Effects</p><p> und </p><p class="kursiv">Adobe Premiere.</p>
+                    </span>
+                </div>           
+        </div>
+        <div class="work-grid">
             <div class="project elements-crystal">
                 <span class="projectimage">
                     <img src="../img/screen-elements-crystal.jpg">
@@ -151,6 +170,18 @@
         banner.onmouseout = 
         banner.ontouchstart = function (evt) {
             document.querySelector('.back-icon').style.animationPlayState = 'paused';
+        }
+
+        var banner = document.querySelector('.forwardfont');
+
+        banner.onmouseover = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.forward-icon').style.animationPlayState = 'running';
+        }
+        
+        banner.onmouseout = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.forward-icon').style.animationPlayState = 'paused';
         }
         
     </script>

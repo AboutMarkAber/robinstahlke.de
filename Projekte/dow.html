@@ -20,19 +20,13 @@
 </head>
 <body>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.12';
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
     <section>
             <nav>
                 <a class="logo" href="../index.html"><h1>Robin Stahlke</h1></a>
                 
                 <div class="back-wrapper scrolled">
-                    <a href="../index.html">
+                    <a class="zurueck" href="../index.html">
                         <div class="back-container">
                             <span>
                                 <img class="back-icon" src="../img/svg/back.svg" />
@@ -41,7 +35,17 @@
                                 <p class="backfont" onmouseover="ani()">zurück</p>
                             </span>
                         </div>
-                    </a>	
+                    </a>
+                    <a class="weiter" href="../index.html">
+                        <div class="forward-container">
+                            <span>
+                                <p class="forwardfont" onmouseover="ani()">weiter</p>
+                            </span>
+                            <span>
+                                <img class="forward-icon" src="../img/svg/back.svg" />
+                            </span>
+                        </div>
+                    </a>		
                 </div>
                 
             </nav>
@@ -167,7 +171,17 @@
         banner.ontouchstart = function (evt) {
             document.querySelector('.back-icon').style.animationPlayState = 'paused';
         }
+        var banner = document.querySelector('.forwardfont');
+
+        banner.onmouseover = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.forward-icon').style.animationPlayState = 'running';
+        }
         
+        banner.onmouseout = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.forward-icon').style.animationPlayState = 'paused';
+        }
     </script>
     <script>
         $(function(){

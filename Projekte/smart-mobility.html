@@ -24,7 +24,7 @@
             <a class="logo" href="../index.html"><h1>Robin Stahlke</h1></a>
             
 			<div class="back-wrapper scrolled">
-				<a href="../index.html">
+				<a class="zurueck" href="../index.html">
 					<div class="back-container">
 						<span>
 							<img class="back-icon" src="../img/svg/back.svg" />
@@ -33,7 +33,17 @@
 							<p class="backfont" onmouseover="ani()">zurück</p>
 						</span>
 					</div>
-				</a>	
+				</a>
+				<a class="weiter" href="../index.html">
+					<div class="forward-container">
+						<span>
+							<p class="forwardfont" onmouseover="ani()">weiter</p>
+						</span>
+						<span>
+							<img class="forward-icon" src="../img/svg/back.svg" />
+						</span>
+					</div>
+				</a>		
 			</div>
            
         </nav>
@@ -46,6 +56,7 @@
 		<h5>Design, Story &amp; und Gestaltung</h5>
 		<span class="introtext">
 			<p>Beim Abschlußprojekt meines Studiums haben wir uns mit dem Thema <p class="kursiv">Smart Mobility</p><p> auseinandergesetzt. In Kleingruppen versetzten wir uns in die Lage aller Verkehrsteilnehmer  und entwarfen mit dem <a href="https://de.wikipedia.org/wiki/Design_Thinking">Design Thinking</a> Verfahren ein Produkt, das den Bedürfnissen der Bürger der Stadt Potsdam gerecht wird.</p>
+			<br/> <p>Zu finden ist hier die Abschlußpräsentation in Form einer Geschichte</p>
 		</span>
 	</section>
 	<section class="images">
@@ -396,7 +407,17 @@
         banner.ontouchstart = function (evt) {
             document.querySelector('.back-icon').style.animationPlayState = 'paused';
         }
+        var banner = document.querySelector('.forwardfont');
+
+        banner.onmouseover = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.forward-icon').style.animationPlayState = 'running';
+        }
         
+        banner.onmouseout = 
+        banner.ontouchstart = function (evt) {
+            document.querySelector('.forward-icon').style.animationPlayState = 'paused';
+        }
     </script>
     <script>
         $(function(){

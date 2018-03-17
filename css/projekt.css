@@ -21,35 +21,6 @@ h5{
     color: white;
 }
 
-.back-icon{
-    display: inline-block;
-    width: 20px;
-    transform: translate(0,0) scale(1);
-    animation: backani .6s ease-in-out infinite paused;
-    animation-direction: alternate;
-}
-
-@keyframes backani{
-    from{transform: translate(0,0) scale(1)}
-    to{transform: translate(-7px,0) scale(1)}
-}
-
-.backfont{
-    display: inline-block;
-    transform: translate(0,-13px);
-}
-
-@media (max-width:400px){
-    .backfont{
-        visibility: hidden;
-    }
-    .back-icon{
-        transform: translate(5px,0) scale(0.8);
-        left: 10%;
-        animation: unset;
-    }
-}
-
 .content{
     margin-top: 100px;
 }
@@ -95,10 +66,15 @@ h5{
 }
 
 @media (max-width:400px){
-    h1{
-        
-    }
     h2{
         font-size: .9rem;
     }
+}
+
+.kursiv{
+    font-style: italic;
+}
+
+p{
+    display: inline;
 }

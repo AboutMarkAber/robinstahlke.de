@@ -84,6 +84,7 @@ a:visited{
     color: #fff;
 }
 
+
 .back-icon{
     display: inline-block;
     width: 20px;
@@ -91,35 +92,62 @@ a:visited{
     animation: backani .6s ease-in-out infinite paused;
     animation-direction: alternate;
 }
+.forward-icon{
+    display: inline-block;
+    width: 20px;
+    transform: translate(0,0) scale(-1);
+    animation: forwardani .6s ease-in-out infinite paused;
+    animation-direction: alternate;
+}
+.back-container{
+    display: inline;
+}
+
+.forward-container{
+    display: inline;
+}
 
 @keyframes backani{
     from{transform: translate(0,0) scale(1)}
     to{transform: translate(-7px,0) scale(1)}
 }
-
+@keyframes forwardani{
+    from{transform: translate(0,0) scale(-1)}
+    to{transform: translate(7px,0) scale(-1)}
+}
 .backfont{
     display: inline-block;
     transform: translate(0,-13px);
-    color: white;
 }
 
+.forwardfont{
+    display: inline-block;
+    transform: translate(0,-13px);
+}
 
 @media (max-width:400px){
     .backfont{
-        visibility: hidden;
+        margin: 0.3em;
+    }
+    .forwardfont{
+        margin: 0.2em;
     }
     .back-icon{
         transform: translate(5px,0) scale(0.8);
         left: 10%;
         animation: unset;
     }
+    .forward-icon{
+        transform: translate(5px,0) scale(-0.8);
+        right: 10%;
+        animation: unset;
+    }
 }
-
 .back-wrapper{
     top: 0px;
     width: 100%;
     position: fixed;
-    padding: 10px 0 6px 10%;
+    padding: 10px 0 6px 0;
     background-color: #111111;
     z-index: 20;
     transition: 0.20s all ease-out;
@@ -256,7 +284,16 @@ a:visited{
 }
 
 .scrolled{
-    padding: 20px 0 12px 10%;
+    padding: 20px 0 12px 0;
+}
+
+.zurueck{
+    float: left;
+    margin-left: 10%;
+}
+.weiter{
+    float: right;
+    margin-right: 10%;
 }
 
 .responsive-video iframe {

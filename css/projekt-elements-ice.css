@@ -95,3 +95,10 @@ h2{
 .kontakt{
     color: white;
 }
+.kursiv{
+    font-style: italic;
+}
+
+p{
+    display: inline;
+}
