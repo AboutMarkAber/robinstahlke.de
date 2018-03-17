@@ -134,6 +134,9 @@ a:visited{
     background-color: #111111;
     z-index: 20;
     transition: 0.20s all ease-out;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
 }
 
 .profilbild{
@@ -348,4 +351,20 @@ a:visited{
     .weiter{
         margin-right: 7%;
     }
+}
+
+.initialien{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    transform:translate(0,-4px)
+}
+
+.initialien h1{
+    margin: 0;
+    color: #fff;
+}
+
+nav{
+    margin: auto;
 }
