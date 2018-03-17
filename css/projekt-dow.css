@@ -119,3 +119,12 @@ h2{
 i{
     color: #791108
 }
+
+.kursiv{
+    font-style: italic;
+}
+
+p{
+    display: inline;
+    color: #791108;
+}

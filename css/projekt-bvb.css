@@ -114,3 +114,12 @@ i{
     background-image: url(https://img.youtube.com/vi/N1Z-LBgUzYs/maxresdefault.jpg);
     background-size: 100%;
 }
+
+.kursiv{
+    font-style: italic;
+}
+
+p{
+    display: inline;
+    color: #0066b3;
+}

@@ -82,3 +82,11 @@ h2{
     background-image: url(https://i.vimeocdn.com/video/688320750.jpg);
     background-size: 100%;
 }
+
+.kursiv{
+    font-style: italic;
+}
+
+p{
+    display: inline;
+}

@@ -79,3 +79,11 @@ h4,h5{
 .project > span > img:hover{
     transform: unset;
 }
+
+.kursiv{
+    font-style: italic;
+}
+
+p{
+    display: inline;
+}
