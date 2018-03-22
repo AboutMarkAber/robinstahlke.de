@@ -163,3 +163,8 @@ p{
 .project > span > img:hover{
     transform: unset;
 }
+
+.smart-anima{
+    background-image: url(https://i.vimeocdn.com/video/688994327.webp?mw=1800&mh=1012&q=70);
+    background-size: cover;
+}
