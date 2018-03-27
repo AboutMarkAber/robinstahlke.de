@@ -233,10 +233,12 @@ a:visited{
     background-repeat: no-repeat;
   }
   
-  /* Hide Play button + controls on iOS */
-  video::-webkit-media-controls {
-      display:none !important;
-  }
+@media(min-width:800px){
+    /* Hide Play button + controls on iOS */
+    video::-webkit-media-controls {
+        display:none;
+    }
+}
 
   .responsive-video {
     position: relative;
